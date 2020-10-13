@@ -1,0 +1,100 @@
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 50px;
+    padding-top: 25px;
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    color: #fff;
+    text-decoration: none;
+
+
+}
+
+/*background stuff*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+   width: 100%;
+   height: 100vh;
+   color: #fff;
+   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   background-size: 400% 400%;
+   position: relative;
+   animation: change 10s ease-in-out infinite;
+    
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+
+/* home page */ 
+h1{
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+    text-align: center;
+}
+
+/* about page */
+h1.about {
+    font-size: x-large;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+    text-align: match-parent;
+}
+
+.form-group {
+    color: #fff;
+}
+
+/* When I added the Bootstrap email form thing I couldn't figure out how to alter it to where it wouldn't underline the navbar elements exclusively on the Contact page...
+ I know I'm missing something. Tried text-decoration around here and declaring it as none but it did nothing. */
+
+
+div.portfolio {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
